@@ -1,6 +1,5 @@
 package com.ileyazilim.openquestionsapp.util;
 
-import com.ileyazilim.openquestionsapp.dto.ExamRequest;
 import com.ileyazilim.openquestionsapp.dto.QuenstionsRequest;
 import com.ileyazilim.openquestionsapp.dto.QuenstionsResponse;
 import com.ileyazilim.openquestionsapp.entities.*;

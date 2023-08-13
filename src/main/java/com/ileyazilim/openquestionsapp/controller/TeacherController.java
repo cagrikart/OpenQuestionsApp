@@ -6,6 +6,7 @@ import com.ileyazilim.openquestionsapp.dto.TeacherRequest;
 import com.ileyazilim.openquestionsapp.entities.Teacher;
 import com.ileyazilim.openquestionsapp.service.abstracts.TeacherService;
 import lombok.AllArgsConstructor;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,8 +22,5 @@ public class TeacherController   {
         return teacherService.listTeacher();
     }
 
-    @PostMapping("/postTeacher")
-    public Result postTeacher(@RequestBody TeacherRequest teacherRequest) {
-        return teacherService.postTeacher(teacherRequest);
-    }
+
 }

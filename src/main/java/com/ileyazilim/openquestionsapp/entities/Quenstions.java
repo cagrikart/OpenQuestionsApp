@@ -19,9 +19,14 @@ public class Quenstions {
     @JoinColumn(name = "lessons_id", referencedColumnName = "id")
     private Lessons lessons;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "teacher_id", referencedColumnName = "id")
-    private Teacher teacher;
+   @OneToOne(cascade = CascadeType.ALL)
+   @JoinColumn(name = "teacher_id", referencedColumnName = "id")
+   private Teacher teacher;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "student_id", referencedColumnName = "id")
+    private Student student;
+
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "typeOfAnswer_id", referencedColumnName = "id")
     private TypeOfAnswer typeOfAnswer;

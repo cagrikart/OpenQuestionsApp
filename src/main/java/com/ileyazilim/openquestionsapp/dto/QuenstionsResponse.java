@@ -14,6 +14,7 @@ public class QuenstionsResponse {
 
 
     private Long teacherId;
+    private Long userId;
 
 
     private Long typeOfAnswerId;
